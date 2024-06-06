@@ -99,5 +99,5 @@ Consequently, the script configuration file (```C:/Users/Markdown/Documents/scri
 
 And, the PythonScript object can be created as following:
 ```java
-PythonScript ps = PythonScript.fromFile("`C:/Users/Markdown/Documents/script01.json");
+PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/Documents/script01.json");
 ```
