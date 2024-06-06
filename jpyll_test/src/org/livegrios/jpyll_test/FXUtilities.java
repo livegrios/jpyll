@@ -1,5 +1,4 @@
 /*
- *  Project:    FileRenamerFX
  *  Artifact:   FXUtilities.java
  *  Version:    0.1
  *  Date:       2013-01-01 00:00:00

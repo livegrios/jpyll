@@ -1,6 +1,6 @@
 {
     "shortName"     : "Example01",
-    "description"   : "Script which prints the first 50 int numbers.",
+    "description"   : "Script which prints the first N int numbers specified by the max_value parameter.",
     "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers_v2.py",
     "action"        : "",
     "parameters"    :   [
