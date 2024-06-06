@@ -125,5 +125,67 @@ except RuntimeWarning as rw:
     print(str(rw))
 ```
 
-Supposing that you have the same
-environment path such as in Example 1, 
+And this is your script configuration file stored in ```[C:/Users/Markdown/Documents/script01.json]```:
+```json
+{
+    "shortName"     : "Example02",
+    "description"   : "Script which prints the first N int numbers specified by the max_value parameter.",
+    "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers_v2.py",
+    "action"        : "",
+    "parameters"    :   [
+                            {
+                                "name" : "max_value",
+                                "type" : "Int",
+                                "value": "50000"
+                            }
+                        ]
+}
+```
+
+By considering the environment path such as in Example 1, the procedure to run your script from
+Java is as follows:
+```java
+public class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");
+            PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/Documents/script01.json");
+            PythonListener listener = new PythonListener()
+            {
+                @Override
+                public void onReady()
+                {
+                    System.out.println("Python Environment Ready!");
+                }
+
+                @Override
+                public void onMessage(String message)
+                {
+                    System.out.println(message);                    
+                }
+
+                @Override
+                public void onFinish()
+                {
+                    System.out.println(""Python Process Ended.");
+                }
+                
+                @Override
+                public void onException(Exception e)
+                {
+                    e.printStackTrace();
+                }
+            };
+            JPythonLinker jpyl = new JPythonLinker();
+            jpyl.runScript(pyenv, ps, listener);
+        }
+        catch (Exception ex
+        {
+            ex.printStackTrace();
+        }
+    }
+}
+```
