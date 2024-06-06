@@ -85,3 +85,19 @@ You can create the ```PythonEnvironment``` object as:
 ```
 PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");
 ```
+
+Consequently, the script configuration file (```C:/Users/Markdown/Documents/script01.json```) content can be as follows:
+```json
+{
+    "shortName"     : "Example01",
+    "description"   : "Script which prints the first 50 int numbers.",
+    "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers.py",
+    "action"        : "",
+    "parameters"    : []
+}
+```
+
+And, the PythonScript object can be created as following:
+```java
+PythonScript ps = PythonScript.fromFile("`C:/Users/Markdown/Documents/script01.json");
+```
