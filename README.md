@@ -170,7 +170,7 @@ public class Test
                 @Override
                 public void onFinish()
                 {
-                    System.out.println(""Python Process Ended.");
+                    System.out.println("Python Process Ended.");
                 }
                 
                 @Override
