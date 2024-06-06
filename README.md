@@ -7,7 +7,8 @@ the Java ecosystem.
 With this library you will able to call your Python scripts from your Java apps
 and retrieve all the messages that are produced by your Python program.
 
-### Example 1 [Quick Guide]
+### Quick Guide
+### Example 1 
 #### 1. Your Python Environment
 Consider that you have your standard Python environment installed at: ```C:\Python311```
 #### 2. Your Python Script
@@ -90,8 +91,8 @@ Consequently, the script configuration file (```C:/Users/Markdown/Documents/scri
 ```json
 {
     "shortName"     : "Example01",
-    "description"   : "Script which prints the first 50 int numbers.",
-    "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers.py",
+    "description"   : "Script which prints the first 10 int numbers.",
+    "filePath"      : "C:/Users/Markdown/print_numbers.py",
     "action"        : "",
     "parameters"    : []
 }
