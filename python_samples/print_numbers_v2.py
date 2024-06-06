@@ -1,8 +1,4 @@
-# This script print the first 50 int numbers
-# making a pause of 0.5 seconds on each iteration:
-
 import sys
-import time
 
 try:
     

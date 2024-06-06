@@ -143,7 +143,7 @@ public class Main extends Application
     {   
         try
         {
-            PythonEnvironment pyenv = PythonEnvironment.fromFile(txtFilePathPyEnv.getText());            
+            PythonEnvironment pyenv = PythonEnvironment.fromFile(txtFilePathPyEnv.getText());
             PythonScript ps = PythonScript.fromFile(txtFilePath.getText());
             PythonListener listener = new PythonListener()
             {

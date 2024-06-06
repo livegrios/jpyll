@@ -3,90 +3,199 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="pnlRoot" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" fx:id="pnlRoot" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <children>
-            <Label maxHeight="1.7976931348623157E308" text="Python Environment Configuration File:">
-               <font>
-                  <Font name="Tahoma" size="14.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <TextField fx:id="txtFilePathPyEnv" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="Monospaced Bold" size="16.0" />
-               </font>
-            </TextField>
-            <Button fx:id="btnSearchFilePyEnv" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Search...">
-               <font>
-                  <Font name="Tahoma" size="14.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-      <HBox layoutX="143.0" layoutY="57.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
-         <children>
-            <Label maxHeight="1.7976931348623157E308" text="Python Script Definition [JSON Format]:">
-               <font>
-                  <Font name="Tahoma" size="14.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <TextField fx:id="txtFilePath" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="Monospaced Bold" size="16.0" />
-               </font>
-            </TextField>
-            <Button fx:id="btnSearchFile" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Search...">
-               <font>
-                  <Font name="Tahoma" size="14.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Button>
-            <Button fx:id="btnRunScriptFile" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Run">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <Label layoutX="24.0" layoutY="100.0" prefHeight="40.0" text="Output:" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="96.0">
-         <font>
-            <Font name="Tahoma" size="14.0" />
-         </font>
-      </Label>
-      <BorderPane fx:id="pnlOutputContainer" layoutX="192.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="144.0">
-         <center>
-            <TextArea fx:id="txtaOutput" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <font>
-                  <Font name="Monospaced Regular" size="16.0" />
-               </font></TextArea>
-         </center></BorderPane>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Python Test">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" text="Python Environment Configuration File:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txtFilePathPyEnv" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Bold" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnSearchFilePyEnv" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Search...">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" text="Python Script Definition [JSON Format]:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txtFilePath" maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Monospaced Bold" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btnSearchFile" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Search...">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnRunScriptFile" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Run">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="40.0" text="Output:" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="96.0">
+                           <font>
+                              <Font name="Tahoma" size="14.0" />
+                           </font>
+                        </Label>
+                        <BorderPane fx:id="pnlOutputContainer" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="144.0">
+                           <center>
+                              <TextArea fx:id="txtaOutput" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Monospaced Regular" size="16.0" />
+                                 </font>
+                              </TextArea>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Configuration Helper">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="pnlPythonEnvironment" layoutX="115.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <VBox maxWidth="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox prefHeight="40.0" prefWidth="200.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Python Environment Configuration">
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Save">
+                                             <HBox.margin>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="40.0" prefWidth="200.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Python Directory:">
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <TextField maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets bottom="4.0" left="8.0" right="4.0" top="4.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Browse">
+                                             <HBox.margin>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="8.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="40.0" prefWidth="200.0">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Python Binary Path:">
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="4.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <TextField maxHeight="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Browse">
+                                             <HBox.margin>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Tahoma" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="8.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </left>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>
