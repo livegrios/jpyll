@@ -81,4 +81,7 @@ with the next content:
     "pythonBinPath" :  "C:/Python311_Dist01/python.exe"
 }
 ``` 
-You can create the ```PythonEnvironment``` object as: ```PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");```
+You can create the ```PythonEnvironment``` object as: 
+```
+PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");
+```
