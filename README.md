@@ -31,7 +31,7 @@ public class Test
         try
         {
             PythonEnvironment pyenv = new PythonEnvironment("C:/Python311_Dist01",
-                                                                 "C:/Python311_Dist01/python.exe");
+                                                            "C:/Python311_Dist01/python.exe");
             PythonScript ps = new PythonScript("C:/Users/Markdown/print_numbers.py", "", "");
             PythonListener listener = new PythonListener()
             {
@@ -68,4 +68,17 @@ public class Test
         }
     }
 }
+```
+#### JSON Alternative
+As an alternate way, jpyll is able to configure the Python environment and script
+information from JSON files as follows.
+##### Python Environment file 
+Suppose that you have your configuration in path ```C:/Users/Markdown/Documents/python_env.json```
+with the next content:
+```json
+{
+    "pythonPath"    :  "C:/Python311_Dist01",
+    "pythonBinPath" :  "C:/Python311_Dist01/python.exe"
+}
 ``` 
+You can create the ```PythonEnvironment``` object as: ```PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");```
