@@ -102,3 +102,28 @@ And, the PythonScript object can be created as following:
 ```java
 PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/Documents/script01.json");
 ```
+
+### Example 2
+In this example, you have a second Python Script which prints the first N integer numbers, 
+where N is a value passed as an argument to the script. Your Python script is as follows:
+```python
+# [C:/Users/Markdown/print_numbers_dynamic.py]
+import sys
+
+try:
+    
+    max_value = int(sys.argv[1])
+    print('Parameter Received [max_value=%d]' % max_value)
+    for i in range(1, max_value + 1):
+        print(i)
+
+except Exception as e:
+    print(str(e))
+except Warning as w:
+    print(str(w))
+except RuntimeWarning as rw:
+    print(str(rw))
+```
+
+Supposing that you have the same
+environment path such as in Example 1, 
