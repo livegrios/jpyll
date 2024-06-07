@@ -49,6 +49,13 @@ public class Parameter
         this.name = name;
         this.type = type;
     }
+    
+    public Parameter(String name, Type type, Object value)
+    {
+        this.name = name;
+        this.type = type;
+        this.value = value;
+    }
 
     public String getName()
     {
