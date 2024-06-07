@@ -42,14 +42,38 @@ public class Parameter
     Type type;
     Object value;
     
+    /**
+     * The default constructor.
+     */
     public Parameter(){}
 
+    /**
+     * Create a <code>Parameter</code> object specifying its <i>name</i> and
+     * <i>type</i>.
+     * @param name  The name of the parameter.
+     * @param type  The type of the parameter which is represented by an
+     *              enumerated type which covers the basic data types such as
+     *              integer (Type.Int), double precision (Type.Float), 
+     *              string (Type.String) and boolean (Type.Boolean).
+     */
     public Parameter(String name, Type type)
     {
         this.name = name;
         this.type = type;
     }
     
+    /**
+     * Create a <code>Parameter</code> object specifying its <i>name</i>,
+     * <i>type</i> and <i>value</i>.
+     * @param name  The name of the parameter.
+     * @param type  The type of the parameter which is represented by an
+     *              enumerated type which covers the basic data types such as
+     *              integer (Type.Int), double precision (Type.Float), 
+     *              string (Type.String) and boolean (Type.Boolean).
+     * @param value The value of the parameter which can be of any common type
+     *              such as numbers (integer and floating point), String and
+     *              boolean.
+     */
     public Parameter(String name, Type type, Object value)
     {
         this.name = name;
@@ -57,31 +81,55 @@ public class Parameter
         this.value = value;
     }
 
+    /**
+     * Return the parameter name.
+     * @return The parameter name.
+     */
     public String getName()
     {
         return name;
     }
 
+    /**
+     * Set the parameter name.
+     * @param name The parameter name.
+     */
     public void setName(String name)
     {
         this.name = name;
     }
 
+    /**
+     * Return the parameter type.
+     * @return The paramater type.
+     */
     public Type getType()
     {
         return type;
     }
 
+    /**
+     * Set the parameter type.
+     * @param type 
+     */
     public void setType(Type type)
     {
         this.type = type;
     }
 
+    /**
+     * Return the parameter value.
+     * @return The paraneter value.
+     */
     public Object getValue()
     {
         return value;
     }
 
+    /**
+     * Set the parameter value.
+     * @param value The parameter value.
+     */
     public void setValue(Object value)
     {
         this.value = value;

@@ -32,8 +32,20 @@ import org.livegrios.jpyll.model.PythonScript;
  */
 public class JPythonLinker
 {   
+    /**
+     * The JPythonLinker default constructor.
+     */
     public JPythonLinker(){}
     
+    /**
+     * This method execute a Python script.
+     * @param pyenv is the object with the Python environment information-
+     * @param ps is the object with the Python script information.
+     * @param listener  is the listener which will react to the distinct stages
+     *                  of the Python execution environment and the messages
+     *                  produced by the script.
+     * @throws Exception 
+     */
     public void runScript(PythonEnvironment pyenv, PythonScript ps, PythonListener listener) throws Exception
     {
         PythonProcess pp = PythonProcess.build(pyenv, ps, listener);
