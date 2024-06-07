@@ -51,7 +51,7 @@ public class Test
                 @Override
                 public void onFinish()
                 {
-                    System.out.println(""Python Process Ended.");
+                    System.out.println("Python Process Ended.");
                 }
                 
                 @Override
@@ -182,7 +182,7 @@ public class Test
             JPythonLinker jpyl = new JPythonLinker();
             jpyl.runScript(pyenv, ps, listener);
         }
-        catch (Exception ex
+        catch (Exception ex)
         {
             ex.printStackTrace();
         }

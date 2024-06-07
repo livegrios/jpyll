@@ -2,7 +2,6 @@ package org.livegrios.jpyll_test;
 
 import java.io.File;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
