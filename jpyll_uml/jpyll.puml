@@ -1,0 +1,61 @@
+@startuml
+    enum org.livegrios.jpyll.model.Type
+    {
+        Int
+        Float
+        String
+        Boolean
+    }
+
+    class org.livegrios.jpyll.model.Parameter
+    {
+        # String name
+        # Type type
+        # Object value
+        --
+        + Parameter()
+        + Parameter(String name, Type type, Object value)
+        --
+        + Getters - Setters Methods
+    }
+    
+    class org.livegrios.jpyll.model.PythonScript
+    {
+        # String shortName
+        # String description
+        # String filePath
+        # String action
+        # List<Parameter> parameters
+        --
+        + PythonScript()
+        + PythonScript(String filePath, String description, String action)
+    }
+
+    class org.livegrios.jpyll.model.PythonEnvironment
+    {
+        # String pythonPath
+        # String pythonBinPath
+        --
+        public PythonEnvironment()
+        public PythonEnvironment(String pythonPath, String pythonBinPath)
+        --
+        + Getters - Setters Methods
+    }
+
+    interface org.livegrios.jpyll.PythonListener
+    {
+        + void onReady()
+        + void onMessage(String message)
+        + void onFinish() 
+        + void onException(Exception ex)
+    }
+
+    abstract class org.livegrios.jpyll.PythonProcess
+    {
+        + {static} PythonProcess build(PythonEnvironment pyenv, PythonScript pythonScript, PythonListener listener)
+        + void start()
+    }
+
+    Type *-- Parameter
+    Parameter o-- PythonScript
+@enduml
