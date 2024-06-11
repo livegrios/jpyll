@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="965px" preserveAspectRatio="none" style="width:1027px;height:965px;background:#FFFFFF;" version="1.1" viewBox="0 0 1027 965" width="1027px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <!--cluster org-->
+        <g id="cluster_org">
+            <path d="M8.5,6 L33.5,6 A3.75,3.75 0 0 1 36,8.5 L43,29.6094 L1017.5,29.6094 A2.5,2.5 0 0 1 1020,32.1094 L1020,955.5 A2.5,2.5 0 0 1 1017.5,958 L8.5,958 A2.5,2.5 0 0 1 6,955.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+            <line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="43" y1="29.6094" y2="29.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="24" x="10" y="22.5332">org</text>
+        </g>
+        <!--cluster livegrios-->
+        <g id="cluster_livegrios">
+            <path d="M32.5,50 L95.5,50 A3.75,3.75 0 0 1 98,52.5 L105,73.6094 L993.5,73.6094 A2.5,2.5 0 0 1 996,76.1094 L996,931.5 A2.5,2.5 0 0 1 993.5,934 L32.5,934 A2.5,2.5 0 0 1 30,931.5 L30,52.5 A2.5,2.5 0 0 1 32.5,50 " fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+            <line style="stroke:#000000;stroke-width:1.5;" x1="30" x2="105" y1="73.6094" y2="73.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="62" x="34" y="66.5332">livegrios</text>
+        </g>
+        <!--cluster jpyll-->
+        <g id="cluster_jpyll">
+            <path d="M56.5,94 L85.5,94 A3.75,3.75 0 0 1 88,96.5 L95,117.6094 L969.5,117.6094 A2.5,2.5 0 0 1 972,120.1094 L972,907.5 A2.5,2.5 0 0 1 969.5,910 L56.5,910 A2.5,2.5 0 0 1 54,907.5 L54,96.5 A2.5,2.5 0 0 1 56.5,94 " fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+            <line style="stroke:#000000;stroke-width:1.5;" x1="54" x2="95" y1="117.6094" y2="117.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="28" x="58" y="110.5332">jpyll</text>
+        </g>
+        <!--cluster model-->
+        <g id="cluster_model">
+            <path d="M366.5,237 L410.5,237 A3.75,3.75 0 0 1 413,239.5 L420,260.6094 L932.5,260.6094 A2.5,2.5 0 0 1 935,263.1094 L935,883.5 A2.5,2.5 0 0 1 932.5,886 L366.5,886 A2.5,2.5 0 0 1 364,883.5 L364,239.5 A2.5,2.5 0 0 1 366.5,237 " fill="none" style="stroke:#000000;stroke-width:1.5;"/>
+            <line style="stroke:#000000;stroke-width:1.5;" x1="364" x2="420" y1="260.6094" y2="260.6094"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="368" y="253.5332">model</text>
+        </g>
+        <!--class PythonListener-->
+        <g id="elem_PythonListener">
+            <rect codeLine="44" fill="#F1F1F1" height="118.4375" id="PythonListener" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="237" x="70.5" y="286"/>
+            <ellipse cx="137.25" cy="302" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M138.2031,298.6406 L138.2031,305.2969 L139.9219,305.2969 Q140.5313,305.2969 140.7969,305.5313 Q141.0625,305.7656 141.0625,306.1563 Q141.0625,306.5313 140.7969,306.7656 Q140.5313,307 139.9219,307 L134.7813,307 Q134.1719,307 133.9063,306.7656 Q133.6406,306.5313 133.6406,306.1406 Q133.6406,305.7656 133.9063,305.5313 Q134.1719,305.2969 134.7813,305.2969 L136.5,305.2969 L136.5,298.6406 L134.7813,298.6406 Q134.1719,298.6406 133.9063,298.4063 Q133.6406,298.1719 133.6406,297.7813 Q133.6406,297.4063 133.9063,297.1719 Q134.1719,296.9375 134.7813,296.9375 L139.9219,296.9375 Q140.5313,296.9375 140.7969,297.1719 Q141.0625,297.4063 141.0625,297.7813 Q141.0625,298.1719 140.7969,298.4063 Q140.5313,298.6406 139.9219,298.6406 L138.2031,298.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="95" x="157.75" y="307.7285">PythonListener</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="71.5" x2="306.5" y1="318" y2="318"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="71.5" x2="306.5" y1="326" y2="326"/>
+            <ellipse cx="81.5" cy="340.3047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="90.5" y="344.5332">void onReady()</text>
+            <ellipse cx="81.5" cy="357.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="90.5" y="362.1426">void onMessage(String message)</text>
+            <ellipse cx="81.5" cy="375.5234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="90.5" y="379.752">void onFinish()</text>
+            <ellipse cx="81.5" cy="393.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="90.5" y="397.3613">void onException(Exception ex)</text>
+        </g>
+        <!--class PythonProcess-->
+        <g id="elem_PythonProcess">
+            <rect codeLine="52" fill="#F1F1F1" height="83.2188" id="PythonProcess" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="654" x="171" y="130"/>
+            <ellipse cx="446.25" cy="146" fill="#A9DCDF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M448.4375,147.7656 L444.2969,147.7656 L443.875,148.7969 L444.2969,148.7969 Q444.9063,148.7969 445.1719,149.0313 Q445.4375,149.2656 445.4375,149.6563 Q445.4375,150.0313 445.1719,150.2656 Q444.9063,150.5 444.2969,150.5 L442,150.5 Q441.3906,150.5 441.1406,150.2656 Q440.875,150.0313 440.875,149.6406 Q440.875,149.2656 441.1563,149.0313 Q441.4219,148.7813 442.0469,148.7969 L444.7188,142.1406 L443.6094,142.1406 Q443,142.1406 442.7344,141.9063 Q442.4688,141.6719 442.4688,141.2813 Q442.4688,140.9063 442.7344,140.6719 Q443,140.4375 443.6094,140.4375 L447.2813,140.4375 L450.6719,148.7969 Q451.2656,148.7969 451.4531,148.9375 Q451.8438,149.2031 451.8438,149.6563 Q451.8438,150.0313 451.5781,150.2656 Q451.3281,150.5 450.7188,150.5 L448.4219,150.5 Q447.8125,150.5 447.5469,150.2656 Q447.2813,150.0313 447.2813,149.6406 Q447.2813,149.2656 447.5469,149.0313 Q447.8125,148.7969 448.4219,148.7969 L448.8438,148.7969 L448.4375,147.7656 Z M447.7188,146.0625 L446.3594,142.6875 L444.9844,146.0625 L447.7188,146.0625 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="95" x="466.75" y="151.7285">PythonProcess</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="172" x2="824" y1="162" y2="162"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="172" x2="824" y1="170" y2="170"/>
+            <ellipse cx="182" cy="184.3047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="628" x="191" y="188.5332">PythonProcess build(PythonEnvironment pyenv, PythonScript pythonScript, PythonListener listener)</text>
+            <ellipse cx="182" cy="201.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="191" y="206.1426">void start()</text>
+        </g>
+        <!--class Type-->
+        <g id="elem_Type">
+            <rect codeLine="1" fill="#F1F1F1" height="118.4375" id="Type" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="855" y="286"/>
+            <ellipse cx="870" cy="302" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M868.8594,302.7969 L868.8594,305.2969 L873.1875,305.2969 L873.1875,304.375 Q873.1875,303.7656 873.4219,303.5 Q873.6719,303.2344 874.0469,303.2344 Q874.4219,303.2344 874.6563,303.5 Q874.8906,303.7656 874.8906,304.375 L874.8906,307 L866.8906,307 Q866.2656,307 866,306.7656 Q865.75,306.5313 865.75,306.1406 Q865.75,305.7656 866.0156,305.5313 Q866.2813,305.2969 866.8906,305.2969 L867.1563,305.2969 L867.1563,298.6406 L866.8906,298.6406 Q866.2656,298.6406 866,298.4063 Q865.75,298.1719 865.75,297.7813 Q865.75,297.4063 866,297.1719 Q866.2656,296.9375 866.8906,296.9375 L874.5156,296.9375 L874.5156,299.5313 Q874.5156,300.1406 874.2813,300.4063 Q874.0625,300.6563 873.6719,300.6563 Q873.2969,300.6563 873.0625,300.4063 Q872.8281,300.1406 872.8281,299.5313 L872.8281,298.6406 L868.8594,298.6406 L868.8594,301.0938 L870.3438,301.0938 Q870.3438,300.4375 870.4688,300.25 Q870.7344,299.8438 871.2031,299.8438 Q871.5781,299.8438 871.8125,300.1094 Q872.0469,300.3594 872.0469,300.9688 L872.0469,302.9375 Q872.0469,303.4844 871.9219,303.6719 Q871.6563,304.0625 871.2031,304.0625 Q870.7344,304.0625 870.4688,303.6563 Q870.3438,303.4688 870.3438,302.7969 L868.8594,302.7969 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="884" y="307.7285">Type</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="856" x2="918" y1="318" y2="318"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="15" x="861" y="336.5332">Int</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="861" y="354.1426">Float</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="861" y="371.752">String</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="861" y="389.3613">Boolean</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="856" x2="918" y1="396.4375" y2="396.4375"/>
+        </g>
+        <!--class PythonParameter-->
+        <g id="elem_PythonParameter">
+            <rect codeLine="9" fill="#F1F1F1" height="161.6563" id="PythonParameter" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="380" x="524" y="477"/>
+            <ellipse cx="654.75" cy="493" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M657.5156,488.875 Q657.6719,488.6563 657.8594,488.5469 Q658.0469,488.4375 658.2656,488.4375 Q658.6406,488.4375 658.875,488.7031 Q659.1094,488.9531 659.1094,489.5625 L659.1094,491.0156 Q659.1094,491.625 658.875,491.8906 Q658.6406,492.1563 658.2656,492.1563 Q657.9219,492.1563 657.7188,491.9531 Q657.5156,491.7656 657.4063,491.25 Q657.3594,490.8906 657.1719,490.7031 Q656.8438,490.3281 656.2344,490.1094 Q655.625,489.8906 655,489.8906 Q654.2344,489.8906 653.5938,490.2188 Q652.9688,490.5469 652.4688,491.2969 Q651.9844,492.0469 651.9844,493.0781 L651.9844,494.1719 Q651.9844,495.4063 652.875,496.2344 Q653.7656,497.0469 655.3594,497.0469 Q656.2969,497.0469 656.9531,496.7969 Q657.3438,496.6406 657.7656,496.2031 Q658.0313,495.9375 658.1719,495.8594 Q658.3281,495.7813 658.5313,495.7813 Q658.8594,495.7813 659.1094,496.0469 Q659.375,496.2969 659.375,496.6406 Q659.375,496.9844 659.0313,497.3906 Q658.5313,497.9688 657.7344,498.2969 Q656.6563,498.75 655.3594,498.75 Q653.8438,498.75 652.6406,498.125 Q651.6563,497.625 650.9688,496.5625 Q650.2813,495.4844 650.2813,494.2031 L650.2813,493.0469 Q650.2813,491.7188 650.8906,490.5781 Q651.5156,489.4219 652.6094,488.8125 Q653.7031,488.1875 654.9375,488.1875 Q655.6719,488.1875 656.3125,488.3594 Q656.9688,488.5156 657.5156,488.875 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="675.25" y="498.7285">PythonParameter</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="525" x2="903" y1="509" y2="509"/>
+            <polygon fill="none" points="535,518.3047,539,522.3047,535,526.3047,531,522.3047" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="544" y="527.5332">String name</text>
+            <polygon fill="none" points="535,535.9141,539,539.9141,535,543.9141,531,539.9141" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="544" y="545.1426">Type type</text>
+            <polygon fill="none" points="535,553.5234,539,557.5234,535,561.5234,531,557.5234" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="544" y="562.752">Object value</text>
+            <line style="stroke:#181818;stroke-width:1.0;" x1="525" x2="903" y1="569.8281" y2="569.8281"/>
+            <ellipse cx="535" cy="584.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="544" y="588.3613">PythonParameter()</text>
+            <ellipse cx="535" cy="601.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="354" x="544" y="605.9707">PythonParameter(String name, Type type, Object value)</text>
+            <line style="stroke:#181818;stroke-width:1.0;" x1="525" x2="903" y1="613.0469" y2="613.0469"/>
+            <ellipse cx="535" cy="627.3516" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="544" y="631.5801">Getters - Setters Methods</text>
+        </g>
+        <!--class PythonScript-->
+        <g id="elem_PythonScript">
+            <rect codeLine="21" fill="#F1F1F1" height="171.2656" id="PythonScript" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="409" x="509.5" y="699"/>
+            <ellipse cx="669.75" cy="715" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M672.5156,710.875 Q672.6719,710.6563 672.8594,710.5469 Q673.0469,710.4375 673.2656,710.4375 Q673.6406,710.4375 673.875,710.7031 Q674.1094,710.9531 674.1094,711.5625 L674.1094,713.0156 Q674.1094,713.625 673.875,713.8906 Q673.6406,714.1563 673.2656,714.1563 Q672.9219,714.1563 672.7188,713.9531 Q672.5156,713.7656 672.4063,713.25 Q672.3594,712.8906 672.1719,712.7031 Q671.8438,712.3281 671.2344,712.1094 Q670.625,711.8906 670,711.8906 Q669.2344,711.8906 668.5938,712.2188 Q667.9688,712.5469 667.4688,713.2969 Q666.9844,714.0469 666.9844,715.0781 L666.9844,716.1719 Q666.9844,717.4063 667.875,718.2344 Q668.7656,719.0469 670.3594,719.0469 Q671.2969,719.0469 671.9531,718.7969 Q672.3438,718.6406 672.7656,718.2031 Q673.0313,717.9375 673.1719,717.8594 Q673.3281,717.7813 673.5313,717.7813 Q673.8594,717.7813 674.1094,718.0469 Q674.375,718.2969 674.375,718.6406 Q674.375,718.9844 674.0313,719.3906 Q673.5313,719.9688 672.7344,720.2969 Q671.6563,720.75 670.3594,720.75 Q668.8438,720.75 667.6406,720.125 Q666.6563,719.625 665.9688,718.5625 Q665.2813,717.4844 665.2813,716.2031 L665.2813,715.0469 Q665.2813,713.7188 665.8906,712.5781 Q666.5156,711.4219 667.6094,710.8125 Q668.7031,710.1875 669.9375,710.1875 Q670.6719,710.1875 671.3125,710.3594 Q671.9688,710.5156 672.5156,710.875 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="690.25" y="720.7285">PythonScript</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="510.5" x2="917.5" y1="731" y2="731"/>
+            <polygon fill="none" points="520.5,740.3047,524.5,744.3047,520.5,748.3047,516.5,744.3047" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="529.5" y="749.5332">String shortName</text>
+            <polygon fill="none" points="520.5,757.9141,524.5,761.9141,520.5,765.9141,516.5,761.9141" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="529.5" y="767.1426">String description</text>
+            <polygon fill="none" points="520.5,775.5234,524.5,779.5234,520.5,783.5234,516.5,779.5234" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="529.5" y="784.752">String filePath</text>
+            <polygon fill="none" points="520.5,793.1328,524.5,797.1328,520.5,801.1328,516.5,797.1328" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="529.5" y="802.3613">String action</text>
+            <polygon fill="none" points="520.5,810.7422,524.5,814.7422,520.5,818.7422,516.5,814.7422" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="529.5" y="819.9707">List&lt;PythonParameter&gt; parameters</text>
+            <line style="stroke:#181818;stroke-width:1.0;" x1="510.5" x2="917.5" y1="827.0469" y2="827.0469"/>
+            <ellipse cx="520.5" cy="841.3516" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="529.5" y="845.5801">PythonScript()</text>
+            <ellipse cx="520.5" cy="858.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="383" x="529.5" y="863.1895">PythonScript(String filePath, String description, String action)</text>
+        </g>
+        <!--class PythonEnvironment-->
+        <g id="elem_PythonEnvironment">
+            <rect codeLine="33" fill="#F1F1F1" height="144.0469" id="PythonEnvironment" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="440" x="380" y="273"/>
+            <ellipse cx="534.25" cy="289" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+            <path d="M537.0156,284.875 Q537.1719,284.6563 537.3594,284.5469 Q537.5469,284.4375 537.7656,284.4375 Q538.1406,284.4375 538.375,284.7031 Q538.6094,284.9531 538.6094,285.5625 L538.6094,287.0156 Q538.6094,287.625 538.375,287.8906 Q538.1406,288.1563 537.7656,288.1563 Q537.4219,288.1563 537.2188,287.9531 Q537.0156,287.7656 536.9063,287.25 Q536.8594,286.8906 536.6719,286.7031 Q536.3438,286.3281 535.7344,286.1094 Q535.125,285.8906 534.5,285.8906 Q533.7344,285.8906 533.0938,286.2188 Q532.4688,286.5469 531.9688,287.2969 Q531.4844,288.0469 531.4844,289.0781 L531.4844,290.1719 Q531.4844,291.4063 532.375,292.2344 Q533.2656,293.0469 534.8594,293.0469 Q535.7969,293.0469 536.4531,292.7969 Q536.8438,292.6406 537.2656,292.2031 Q537.5313,291.9375 537.6719,291.8594 Q537.8281,291.7813 538.0313,291.7813 Q538.3594,291.7813 538.6094,292.0469 Q538.875,292.2969 538.875,292.6406 Q538.875,292.9844 538.5313,293.3906 Q538.0313,293.9688 537.2344,294.2969 Q536.1563,294.75 534.8594,294.75 Q533.3438,294.75 532.1406,294.125 Q531.1563,293.625 530.4688,292.5625 Q529.7813,291.4844 529.7813,290.2031 L529.7813,289.0469 Q529.7813,287.7188 530.3906,286.5781 Q531.0156,285.4219 532.1094,284.8125 Q533.2031,284.1875 534.4375,284.1875 Q535.1719,284.1875 535.8125,284.3594 Q536.4688,284.5156 537.0156,284.875 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="554.75" y="294.7285">PythonEnvironment</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="381" x2="819" y1="305" y2="305"/>
+            <polygon fill="none" points="391,314.3047,395,318.3047,391,322.3047,387,318.3047" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="400" y="323.5332">String pythonPath</text>
+            <polygon fill="none" points="391,331.9141,395,335.9141,391,339.9141,387,335.9141" style="stroke:#B38D22;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="400" y="341.1426">String pythonBinPath</text>
+            <line style="stroke:#181818;stroke-width:1.0;" x1="381" x2="819" y1="348.2188" y2="348.2188"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="386" y="366.752">public PythonEnvironment()</text>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="428" x="386" y="384.3613">public PythonEnvironment(String pythonPath, String pythonBinPath)</text>
+            <line style="stroke:#181818;stroke-width:1.0;" x1="381" x2="819" y1="391.4375" y2="391.4375"/>
+            <ellipse cx="391" cy="405.7422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="400" y="409.9707">Getters - Setters Methods</text>
+        </g>
+        <!--reverse link Type to PythonParameter-->
+        <g id="link_Type_PythonParameter">
+            <path codeLine="58" d="M847.8804,404.0928 C842.4104,411.7928 843.63,409.81 838,417 C822.38,436.94 804.77,457.72 787.83,476.99 " fill="none" id="Type-backto-PythonParameter" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="#181818" points="854.83,394.31,848.0943,396.8849,847.8804,404.0928,854.6161,401.5179,854.83,394.31" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--reverse link PythonParameter to PythonScript-->
+        <g id="link_PythonParameter_PythonScript">
+            <path codeLine="59" d="M714,651.1 C714,670.49 714,679.28 714,698.87 " fill="none" id="PythonParameter-backto-PythonScript" style="stroke:#181818;stroke-width:1.0;"/>
+            <polygon fill="none" points="714,639.1,710,645.1,714,651.1,718,645.1,714,639.1" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link PythonProcess to PythonListener-->
+        <g id="link_PythonProcess_PythonListener">
+            <path codeLine="60" d="M368.14,213.02 C356.72,217.92 345.51,223.25 335,229 C306.41,244.64 277.65,265.83 253.31,285.77 " fill="none" id="PythonProcess-PythonListener" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link PythonProcess to PythonEnvironment-->
+        <g id="link_PythonProcess_PythonEnvironment">
+            <path codeLine="61" d="M522.17,213.14 C532.78,230.97 545.54,252.44 557.64,272.78 " fill="none" id="PythonProcess-PythonEnvironment" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link PythonProcess to PythonScript-->
+        <g id="link_PythonProcess_PythonScript">
+            <path codeLine="62" d="M825.22,200.14 C882.48,208.11 927.1,217.75 937,229 C960.17,255.35 923.8,635.83 922,639 C909.16,661.67 891.12,681.58 870.97,698.8 " fill="none" id="PythonProcess-PythonScript" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--link PythonProcess to PythonParameter-->
+        <g id="link_PythonProcess_PythonParameter">
+            <path codeLine="63" d="M375.7,213.21 C370.54,217.91 365.9,223.15 362,229 C315.62,298.5 315.09,347.86 362,417 C399.2,471.83 461.64,505.19 523.69,525.48 " fill="none" id="PythonProcess-PythonParameter" style="stroke:#181818;stroke-width:1.0;"/>
+        </g>
+        <!--SRC=[dLJ1Ri8m3Btp5PPsWT7o1TCEI31D6XiQ-u6G6WXAaoe95GZnxmjjMfgcPM8zf7QUcsS_km40G758GQhjXBCSjuf9FTbd9yudgKoGJtvE6Gvi69oBzVgy2rFRSox9pLiPnSIsTgTISYIYy2-3uaKvqVeEtV9aTb8iYI8f6bGjvYV70CB2ZTrhac2gJCkzh_KUgO6SyCDjEuvhSmmjhk7e3jRWZMvqaSSowgPvGsDFq133obaBj8SdskboNH_GPaKLoqoVC7edbVdqrN5GWhhub4aHWXl6SKdCBaG8RNtnmRHvQUdp2bbbwdjYbybtAEs0LZPHH-wHdzZeyUcQYPmfAL8KlJ9chhmkGKfiodouKMnsM7D68I1hbDqR4l17dRJ_7BNYnOH5DeHYfr1bIjSUemZ-lp7aaYKWnJUIvEIrqG4Br9fiiQeZBTsEm3aJJE-68mYXsP5YqUfXRG4UlKQJjJRA3i2TZhi9LPBQ788wpjeGm-W5l31O7nXFXa5RhFWeyiYRLTUGqgcWIZVWpWWgjxogcWHNJ76TFCSnT5r-hJsGTLpZ8l2Bg2EyBlR4j7-6dh2_oVoqVm40]-->
+    </g>
+</svg>

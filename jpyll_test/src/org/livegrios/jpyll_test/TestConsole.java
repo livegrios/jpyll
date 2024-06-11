@@ -2,7 +2,7 @@ package org.livegrios.jpyll_test;
 
 import org.livegrios.jpyll.JPythonLinker;
 import org.livegrios.jpyll.PythonListener;
-import org.livegrios.jpyll.model.Parameter;
+import org.livegrios.jpyll.model.PythonParameter;
 import org.livegrios.jpyll.model.PythonEnvironment;
 import org.livegrios.jpyll.model.PythonScript;
 
@@ -45,7 +45,7 @@ public class TestConsole
                     e.printStackTrace();
                 }
             };
-            ps.addParameter(new Parameter("max_value", Parameter.Type.Int, "50000"));
+            ps.addParameter(new PythonParameter("max_value", PythonParameter.Type.Int, "50000"));
             JPythonLinker jpyl = new JPythonLinker();
             jpyl.runScript(pyenv, ps, listener);
         }

@@ -41,7 +41,7 @@ public class PythonScript
     String description;
     String filePath;
     String action;
-    List<Parameter> parameters;
+    List<PythonParameter> parameters;
     /**
      * The default constructor.
      */
@@ -144,7 +144,7 @@ public class PythonScript
      * Return the list of parameters needed by the script.
      * @return The list of parameters.
      */
-    public List<Parameter> getParameters()
+    public List<PythonParameter> getParameters()
     {
         return parameters;
     }
@@ -161,9 +161,9 @@ public class PythonScript
      * Add a parameter to the script.
      * @param p The script <code>Parameter</code> to be added.
      */
-    public void addParameter(Parameter... p)
+    public void addParameter(PythonParameter... p)
     {
-        for (Parameter par : p)
+        for (PythonParameter par : p)
             parameters.add(par);
     }
     

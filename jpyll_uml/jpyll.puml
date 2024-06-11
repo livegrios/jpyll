@@ -7,14 +7,14 @@
         Boolean
     }
 
-    class org.livegrios.jpyll.model.Parameter
+    class org.livegrios.jpyll.model.PythonParameter
     {
         # String name
         # Type type
         # Object value
         --
-        + Parameter()
-        + Parameter(String name, Type type, Object value)
+        + PythonParameter()
+        + PythonParameter(String name, Type type, Object value)
         --
         + Getters - Setters Methods
     }
@@ -25,7 +25,7 @@
         # String description
         # String filePath
         # String action
-        # List<Parameter> parameters
+        # List<PythonParameter> parameters
         --
         + PythonScript()
         + PythonScript(String filePath, String description, String action)
@@ -56,6 +56,11 @@
         + void start()
     }
 
-    Type *-- Parameter
-    Parameter o-- PythonScript
+    Type *-- PythonParameter
+    PythonParameter o-- PythonScript
+    PythonProcess -- PythonListener
+    PythonProcess -- PythonEnvironment
+    PythonProcess -- PythonScript
+    PythonProcess -- PythonParameter
+    
 @enduml
