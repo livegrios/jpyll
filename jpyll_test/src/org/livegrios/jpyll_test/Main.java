@@ -2,19 +2,25 @@ package org.livegrios.jpyll_test;
 
 import java.io.File;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.fxmisc.richtext.CodeArea;
 import org.livegrios.jpyll.JPythonLinker;
 import org.livegrios.jpyll.PythonListener;
 import org.livegrios.jpyll.model.PythonEnvironment;
+import org.livegrios.jpyll.model.PythonParameter;
 import org.livegrios.jpyll.model.PythonScript;
 
 /**
@@ -32,7 +38,37 @@ public class Main extends Application
     @FXML Button btnSearchFile;
     @FXML Button btnRunScriptFile;
     
+    @FXML BorderPane pnlPythonEnvironmentJSONContent;
+    @FXML BorderPane pnlPythonScriptJSONContent;
+    
+    @FXML TextField txtPythonDirectory;
+    @FXML TextField txtPythonBinPath;
+    @FXML TextField txtScriptLocation;
+    @FXML TextField txtScriptName;
+    @FXML TextField txtScriptDescription;
+    
+    @FXML TextField txtParameterName;
+    @FXML TextField txtParameterValue;
+        
+    @FXML TableView<PythonParameter> tblvScriptParameters;
+    
+    @FXML ComboBox cmbPythonParameterType;
+    
+    @FXML Button btnSavePythonEnvironment;
+    @FXML Button btnBrowsePythonBinPath;
+    @FXML Button btnBrowsePythonScriptLocation;
+    @FXML Button btnSavePythonScript;    
+    @FXML Button btnNewPythonParameter;
+    @FXML Button btnAddPythonParameter;
+    @FXML Button btnRemovePythonParameter;
+    
+    DirectoryChooser directoryChooser;
     FileChooser fileChooser;
+    
+    CodeArea codeAreaPythonEnvironment;
+    CodeArea codeAreaPythonScript;
+    
+    ControllerPythonScript controllerPythonScript;
     
     FXMLLoader fxmll;
     Scene scene;
@@ -67,7 +103,25 @@ public class Main extends Application
     {
         fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
-        sbOutput = new StringBuilder();       
+        
+        directoryChooser = new DirectoryChooser();
+        directoryChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
+        
+        sbOutput = new StringBuilder();
+        
+        codeAreaPythonEnvironment = new CodeArea();
+        codeAreaPythonScript      = new CodeArea();
+        
+        codeAreaPythonEnvironment.setEditable(false);
+        codeAreaPythonScript.setEditable(false);
+        
+        pnlPythonEnvironmentJSONContent.setCenter(codeAreaPythonEnvironment);
+        pnlPythonScriptJSONContent.setCenter(codeAreaPythonScript);
+        
+        controllerPythonScript = new ControllerPythonScript(this);
+        
+        cmbPythonParameterType.setItems(FXCollections.observableArrayList(PythonParameter.Type.values()));
+        
     }
     
     private void addListeners()
@@ -75,6 +129,10 @@ public class Main extends Application
         btnSearchFilePyEnv.setOnAction(evt -> { loadEnvironmentFile(); });
         btnSearchFile.setOnAction(evt -> { loadScriptConfigurationFile(); });
         btnRunScriptFile.setOnAction(evt -> { runFile(); });
+        btnBrowsePythonBinPath.setOnAction(evt -> { browsePythonBinPath(); });
+        btnBrowsePythonScriptLocation.setOnAction( evt -> { browsePythonScript(); });
+        
+        btnAddPythonParameter.setOnAction( evt -> { controllerPythonScript.addNewParameter(); });
     }
     
     private void loadEnvironmentFile()
@@ -88,6 +146,7 @@ public class Main extends Application
             if (f != null)
             {
                 txtFilePathPyEnv.setText(f.getAbsolutePath());
+                fileChooser.setInitialDirectory(f.getParentFile());
             }
                 
         } 
@@ -107,7 +166,8 @@ public class Main extends Application
             f = fileChooser.showOpenDialog(window);
             if (f != null)
             {
-                txtFilePath.setText(f.getAbsolutePath());                
+                txtFilePath.setText(f.getAbsolutePath());
+                fileChooser.setInitialDirectory(f.getParentFile());
             }
                 
         } 
@@ -118,12 +178,63 @@ public class Main extends Application
         }
     }
     
+    private void browsePythonBinPath()
+    {        
+        File f = null;
+        String strf = null;
+        String strb = null;
+        
+        try
+        {            
+            fileChooser.getExtensionFilters().clear();
+            if (System.getProperty("os.name").toLowerCase().contains("windows"))
+                fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Python Executable File (*.exe)", "*.exe"));
+            
+            f = fileChooser.showOpenDialog(window);
+            if (f != null)
+            {                
+                strf = f.toURI().toString().substring(6);
+                strb = f.getParentFile().toURI().toString().substring(6);                
+                controllerPythonScript.setPythonEnvironmentPath(strb, strf);
+                fileChooser.setInitialDirectory(f.getParentFile());                
+            }
+                
+        } 
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            txtaOutput.setText(sbOutput.append(e.toString() + "\n").toString());
+        }
+    }
+    
+    private void browsePythonScript()
+    {        
+        File f = null;
+        String strf = null;
+        
+        try
+        {                        
+            fileChooser.getExtensionFilters().clear();
+            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Python Script File (*.py)", "*.py"));
+            fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
+            f = fileChooser.showOpenDialog(window);
+            if (f != null)
+            {                
+                strf = f.toURI().toString().substring(6);                               
+                fileChooser.setInitialDirectory(f.getParentFile());
+                txtScriptLocation.textProperty().set(strf);
+            }
+                
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            txtaOutput.setText(sbOutput.append(e.toString() + "\n").toString());
+        }
+    }
+    
     private void addMessage(String message)
     {
-////////        Platform.runLater(() -> {
-////////            txtaOutput.setText(sbOutput.append(message).toString());
-////////            //txtaOutput.setScrollTop(Double.MAX_VALUE);
-////////        });
         try
         {
             FXUtilities.runAndWait(() ->{
@@ -155,7 +266,6 @@ public class Main extends Application
                 @Override
                 public void onMessage(String message)
                 {
-                    //System.out.println(message);
                     addMessage(message + "\n");
                 }
 

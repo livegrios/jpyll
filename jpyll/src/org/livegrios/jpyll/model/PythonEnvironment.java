@@ -27,6 +27,7 @@ package org.livegrios.jpyll.model;
 import com.google.gson.Gson;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
+import org.livegrios.jpyll.JPYLLCommons;
 
 /**
  * This class abstracts the information related with a Python Environment.
@@ -81,6 +82,11 @@ public class PythonEnvironment
     public String getPythonBinPath()
     {
         return pythonBinPath;
+    }
+    
+    public String toJSON()
+    {
+        return JPYLLCommons.gson.toJson(this);
     }
 
     /**

@@ -32,10 +32,10 @@ public class PythonParameter
 {
     public static enum Type
     {
-        Int,
-        Float,
-        String,
-        Boolean
+        Int {@Override public String toString(){ return "int"; }},
+        Float {@Override public String toString(){ return "float"; }},
+        String {@Override public String toString(){ return "string"; }},
+        Boolean {@Override public String toString(){ return "bool"; }}
     }
         
     String name;

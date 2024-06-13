@@ -29,6 +29,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
+import org.livegrios.jpyll.JPYLLCommons;
 
 /**
  * This class abstracts the information related with a Python Script since it is
@@ -165,6 +166,11 @@ public class PythonScript
     {
         for (PythonParameter par : p)
             parameters.add(par);
+    }
+    
+    public String toJSON()
+    {
+        return JPYLLCommons.gson.toJson(this);
     }
     
     /**
