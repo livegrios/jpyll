@@ -74,7 +74,7 @@ public class Test
 As an alternate way, jpyll is able to configure the Python environment and script
 information from JSON files as follows.
 ##### Python Environment file 
-Suppose that you have your configuration in path ```C:/Users/Markdown/Documents/python_env.json```
+Suppose that you have your configuration in path ```C:/Users/Markdown/python_env.json```
 with the next content:
 ```json
 {
@@ -126,12 +126,12 @@ except RuntimeWarning as rw:
     print(str(rw))
 ```
 
-And this is your script configuration file stored in ```[C:/Users/Markdown/Documents/script02.json]```:
+And this is your script configuration file stored in ```[C:/Users/Markdown/script02.json]```:
 ```json
 {
     "shortName"     : "Example02",
     "description"   : "Script which prints the first N int numbers specified by the max_value argument.",
-    "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers_v2.py",
+    "filePath"      : "C:/Users/Markdown/print_numbers_v2.py",
     "action"        : "",
     "arguments"    :   [
                             {
@@ -152,8 +152,8 @@ public class Test
     {
         try
         {
-            PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/Documents/python_env.json");
-            PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/Documents/script02.json");
+            PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/python_env.json");
+            PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/script02.json");
             PythonListener listener = new PythonListener()
             {
                 @Override
