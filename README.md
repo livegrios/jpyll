@@ -78,8 +78,8 @@ Suppose that you have your configuration in path ```C:/Users/Markdown/Documents/
 with the next content:
 ```json
 {
-    "pythonPath"    :  "C:/Python311_Dist01",
-    "pythonBinPath" :  "C:/Python311_Dist01/python.exe"
+    "pythonPath"    :  "C:/Python311",
+    "pythonBinPath" :  "C:/Python311/python.exe"
 }
 ``` 
 You can create the ```PythonEnvironment``` object as: 
