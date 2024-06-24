@@ -28,7 +28,7 @@ package org.livegrios.jpyll.model;
  * This class abstracts a Python script parameter information.
  * @author LiveGrios
  */
-public class PythonParameter
+public class PythonArgument
 {
     public static enum Type
     {
@@ -45,7 +45,7 @@ public class PythonParameter
     /**
      * The default constructor.
      */
-    public PythonParameter(){}
+    public PythonArgument(){}
 
     /**
      * Create a <code>Parameter</code> object specifying its <i>name</i> and
@@ -56,7 +56,7 @@ public class PythonParameter
      *              integer (Type.Int), double precision (Type.Float), 
      *              string (Type.String) and boolean (Type.Boolean).
      */
-    public PythonParameter(String name, Type type)
+    public PythonArgument(String name, Type type)
     {
         this.name = name;
         this.type = type;
@@ -74,7 +74,7 @@ public class PythonParameter
      *              such as numbers (integer and floating point), String and
      *              boolean.
      */
-    public PythonParameter(String name, Type type, Object value)
+    public PythonArgument(String name, Type type, Object value)
     {
         this.name = name;
         this.type = type;

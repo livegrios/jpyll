@@ -42,13 +42,13 @@ public class PythonScript
     String description;
     String filePath;
     String action;
-    List<PythonParameter> parameters;
+    List<PythonArgument> arguments;
     /**
      * The default constructor.
      */
     public PythonScript()
     {
-        parameters = new ArrayList<>();
+        arguments = new ArrayList<>();
     }
     
     /**
@@ -65,7 +65,7 @@ public class PythonScript
         this.filePath = filePath;
         this.description = description;
         this.action = action;
-        this.parameters = new ArrayList<>();
+        this.arguments = new ArrayList<>();
     }
 
     /**
@@ -142,30 +142,30 @@ public class PythonScript
     }
 
     /**
-     * Return the list of parameters needed by the script.
-     * @return The list of parameters.
+     * Return the list of arguments needed by the script.
+     * @return The list of arguments.
      */
-    public List<PythonParameter> getParameters()
+    public List<PythonArgument> getArguments()
     {
-        return parameters;
+        return arguments;
     }
     
     /**
-     * Remove all the preiously defined script parameters.
+     * Remove all the preiously defined script arguments.
      */
-    public void clearParameters()
+    public void clearArguments()
     {
-        parameters.clear();
+        arguments.clear();
     }
     
     /**
-     * Add a parameter to the script.
-     * @param p The script <code>Parameter</code> to be added.
+     * Add arguments to the script.
+     * @param p The script <code>Argument</code> to be added.
      */
-    public void addParameter(PythonParameter... p)
+    public void addArgument(PythonArgument... p)
     {
-        for (PythonParameter par : p)
-            parameters.add(par);
+        for (PythonArgument par : p)
+            arguments.add(par);
     }
     
     public String toJSON()

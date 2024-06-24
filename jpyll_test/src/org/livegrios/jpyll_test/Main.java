@@ -20,7 +20,7 @@ import org.fxmisc.richtext.CodeArea;
 import org.livegrios.jpyll.JPythonLinker;
 import org.livegrios.jpyll.PythonListener;
 import org.livegrios.jpyll.model.PythonEnvironment;
-import org.livegrios.jpyll.model.PythonParameter;
+import org.livegrios.jpyll.model.PythonArgument;
 import org.livegrios.jpyll.model.PythonScript;
 
 /**
@@ -50,7 +50,7 @@ public class Main extends Application
     @FXML TextField txtParameterName;
     @FXML TextField txtParameterValue;
         
-    @FXML TableView<PythonParameter> tblvScriptParameters;
+    @FXML TableView<PythonArgument> tblvScriptParameters;
     
     @FXML ComboBox cmbPythonParameterType;
     
@@ -120,7 +120,7 @@ public class Main extends Application
         
         controllerPythonScript = new ControllerPythonScript(this);
         
-        cmbPythonParameterType.setItems(FXCollections.observableArrayList(PythonParameter.Type.values()));
+        cmbPythonParameterType.setItems(FXCollections.observableArrayList(PythonArgument.Type.values()));
         
     }
     

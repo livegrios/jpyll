@@ -4,14 +4,11 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.util.List;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import org.fxmisc.richtext.CodeArea;
 import org.livegrios.jpyll.model.PythonEnvironment;
-import org.livegrios.jpyll.model.PythonParameter;
+import org.livegrios.jpyll.model.PythonArgument;
 import org.livegrios.jpyll.model.PythonScript;
 
 /**
@@ -23,7 +20,7 @@ public class ControllerPythonScript
     static Gson gson = new GsonBuilder().setPrettyPrinting().create();
     
     Main main;    
-    ObservableList<PythonParameter> parameters;
+    ObservableList<PythonArgument> parameters;
     TableAdapterPythonParameters tableAdapterPythonParameters;
     
     PythonEnvironment pyenv;
@@ -88,7 +85,7 @@ public class ControllerPythonScript
         codeArea.append(gson.toJson(entity), Application.STYLESHEET_MODENA);
     }
     
-    public List<PythonParameter> getParameters()
+    public List<PythonArgument> getParameters()
     {
         return main.tblvScriptParameters.getItems();
     }
@@ -97,9 +94,9 @@ public class ControllerPythonScript
     {
         String name = main.txtParameterName.getText().trim();
         int typeIndex = main.cmbPythonParameterType.getSelectionModel().getSelectedIndex();
-        PythonParameter.Type type = null;
+        PythonArgument.Type type = null;
         String value = main.txtParameterValue.getText();
-        PythonParameter pp = null;
+        PythonArgument pp = null;
         
         if (name.isEmpty())
             name = "Unamed";
@@ -107,10 +104,10 @@ public class ControllerPythonScript
         if (typeIndex < 0)
             typeIndex = 0;
         
-        type = PythonParameter.Type.values()[typeIndex];
+        type = PythonArgument.Type.values()[typeIndex];
         
-        pp = new PythonParameter(name, type, value);
-        pyscript.addParameter(pp);
+        pp = new PythonArgument(name, type, value);
+        pyscript.addArgument(pp);
         parameters.add(pp);
         refreshCodeArea(main.codeAreaPythonScript, pyscript);
     }

@@ -10,15 +10,14 @@ import org.livegrios.jpyll.model.PythonScript;
  *
  * @author LiveGrios
  */
-public class TestConsole
+public class TestConsoleFromJSON
 {
     public static void main(String[] args)
     {
         try
         {
-            PythonEnvironment pyenv = new PythonEnvironment("C:/Python311",
-                                                            "C:/Python311/python.exe");
-            PythonScript ps = new PythonScript("C:/Users/Markdown/print_numbers_v2.py", "", "");
+            PythonEnvironment pyenv = PythonEnvironment.fromFile("C:/Users/Markdown/python_env.json");
+            PythonScript ps = PythonScript.fromFile("C:/Users/Markdown/script02.json");
             PythonListener listener = new PythonListener()
             {
                 @Override
@@ -45,7 +44,7 @@ public class TestConsole
                     e.printStackTrace();
                 }
             };
-            ps.addArgument(new PythonArgument("max_value", PythonArgument.Type.Int, "50000"));
+            
             JPythonLinker jpyl = new JPythonLinker();
             jpyl.runScript(pyenv, ps, listener);
         }

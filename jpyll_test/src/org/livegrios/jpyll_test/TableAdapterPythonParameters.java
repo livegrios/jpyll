@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.util.Callback;
-import org.livegrios.jpyll.model.PythonParameter;
+import org.livegrios.jpyll.model.PythonArgument;
 
 /**
  *
@@ -21,14 +21,14 @@ public class TableAdapterPythonParameters
     public static Font FONT_DEFAULT = Font.font("Monospaced", FontWeight.NORMAL, 16);
     public static Font FONT_TYPE = Font.font("Monospaced", FontWeight.BOLD, 16);
     
-    TableColumn<PythonParameter, String> tcParamName;
-        TableColumn<PythonParameter, PythonParameter.Type> tcParamType;
-        TableColumn<PythonParameter, Object> tcParamValue;
+    TableColumn<PythonArgument, String> tcParamName;
+        TableColumn<PythonArgument, PythonArgument.Type> tcParamType;
+        TableColumn<PythonArgument, Object> tcParamValue;
     
-    TableView<PythonParameter> tableView;
-    ObservableList<PythonParameter> data;
+    TableView<PythonArgument> tableView;
+    ObservableList<PythonArgument> data;
 
-    public TableAdapterPythonParameters(TableView<PythonParameter> tableView, ObservableList<PythonParameter> data)
+    public TableAdapterPythonParameters(TableView<PythonArgument> tableView, ObservableList<PythonArgument> data)
     {
         this.tableView = tableView;
         this.data = data;
@@ -41,9 +41,9 @@ public class TableAdapterPythonParameters
         tcParamValue = new TableColumn<>("Value");
         
         tcParamName.setPrefWidth(95);
-        tcParamName.setCellFactory((TableColumn<PythonParameter, String> param) ->
+        tcParamName.setCellFactory((TableColumn<PythonArgument, String> param) ->
         {
-            TableCell<PythonParameter, String> cell = new TableCell<PythonParameter, String>()
+            TableCell<PythonArgument, String> cell = new TableCell<PythonArgument, String>()
             {
                 @Override
                 protected void updateItem(String value, boolean empty)
@@ -64,12 +64,12 @@ public class TableAdapterPythonParameters
         });
         
         tcParamType.setPrefWidth(95);
-        tcParamType.setCellFactory((TableColumn<PythonParameter, PythonParameter.Type> param) ->
+        tcParamType.setCellFactory((TableColumn<PythonArgument, PythonArgument.Type> param) ->
         {
-            TableCell<PythonParameter, PythonParameter.Type> cell = new TableCell<PythonParameter, PythonParameter.Type>()
+            TableCell<PythonArgument, PythonArgument.Type> cell = new TableCell<PythonArgument, PythonArgument.Type>()
             {
                 @Override
-                protected void updateItem(PythonParameter.Type value, boolean empty)
+                protected void updateItem(PythonArgument.Type value, boolean empty)
                 {
                     super.updateItem(value, empty); //To change body of generated methods, choose Tools | Templates.
                     
@@ -89,9 +89,9 @@ public class TableAdapterPythonParameters
         
         
         tcParamValue.setPrefWidth(95);
-        tcParamValue.setCellFactory((TableColumn<PythonParameter, Object> param) ->
+        tcParamValue.setCellFactory((TableColumn<PythonArgument, Object> param) ->
         {
-            TableCell<PythonParameter, Object> cell = new TableCell<PythonParameter, Object>()
+            TableCell<PythonArgument, Object> cell = new TableCell<PythonArgument, Object>()
             {
                 @Override
                 protected void updateItem(Object value, boolean empty)

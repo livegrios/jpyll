@@ -26,7 +26,7 @@ package org.livegrios.jpyll;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import org.livegrios.jpyll.model.PythonParameter;
+import org.livegrios.jpyll.model.PythonArgument;
 import org.livegrios.jpyll.model.PythonEnvironment;
 import org.livegrios.jpyll.model.PythonScript;
 
@@ -62,13 +62,13 @@ public abstract class PythonProcess implements Runnable
             @Override
             public void run()
             {
-                cmd = new String[2 + pythonScript.getParameters().size()];
+                cmd = new String[2 + pythonScript.getArguments().size()];
                 int i = 2;
                 try
                 {
                     cmd[0] = pyenv.getPythonBinPath();
                     cmd[1] = pythonScript.getFilePath();
-                    for (PythonParameter par : pythonScript.getParameters())
+                    for (PythonArgument par : pythonScript.getArguments())
                         cmd[i++] =par.getValue().toString();
                     Runtime runtime = Runtime.getRuntime();
                     process = runtime.exec(cmd);

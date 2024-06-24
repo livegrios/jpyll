@@ -3,5 +3,5 @@
     "description"   : "Script which prints the first 50 int numbers.",
     "filePath"      : "E:/VSPROY/VS2022/UTL/jpyll/python_samples/print_numbers.py",
     "action"        : "",
-    "parameters"    : []
+    "arguments"     : []
 }

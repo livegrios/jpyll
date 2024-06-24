@@ -3,7 +3,7 @@ import sys
 try:
     
     max_value = int(sys.argv[1])
-    print('Parameter Received [max_value=%d]' % max_value)
+    print('Argument Received [max_value=%d]' % max_value)
     for i in range(1, max_value + 1):
         print(i)
 
