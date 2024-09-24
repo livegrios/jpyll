@@ -18,7 +18,7 @@ public class TestConsole
         {
             PythonEnvironment pyenv = new PythonEnvironment("C:/Python311",
                                                             "C:/Python311/python.exe");
-            PythonScript ps = new PythonScript("C:/Users/Markdown/print_numbers_v2.py", "", "");
+            PythonScript ps = new PythonScript("C:/Users/Markdown/print_numbers_v2.py");
             PythonListener listener = new PythonListener()
             {
                 @Override

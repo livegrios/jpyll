@@ -51,6 +51,12 @@ public class PythonScript
         arguments = new ArrayList<>();
     }
     
+    
+    public PythonScript(String filePath)
+    {
+        this(filePath, "", "");
+    }
+    
     /**
      * Create a <code>PythonScript</code> instance specifying the script 
      * file path, the description and the action name.
